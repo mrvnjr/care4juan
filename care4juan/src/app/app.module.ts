@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { BarangaydashComponent } from './barangaydash/barangaydash.component';
+import { SoloparentComponent } from './soloparent/soloparent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    BarangaydashComponent
+    BarangaydashComponent,
+    SoloparentComponent
   ],
   imports: [
     BrowserModule,
