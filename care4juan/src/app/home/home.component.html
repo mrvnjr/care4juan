@@ -1,9 +1,235 @@
+
 <div class="dash">
+<<<<<<< HEAD
   <div class="dash-nav" style="background-color: #bc6c25;">
+=======
+  <!-- <header class="">
+    <a class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </a>
+    <div class="">
+      <span style="font-weight: bolder; font-size: large;">Barangay</span>
+    </div>
+    <div class="tools">
+      <div class="dropdown tools-item">
+        <a href="#" class="" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-user"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+          <a class="dropdown-item" href="#!">Profile</a>
+          <a class="dropdown-item" href="login.html">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header> -->
+  <nav class="" [ngClass]="isCollapsed ? 'navbar bg-light fixed-top' : 'navbar bg-light fixed-top'">
+    <div class="container">
+      <div class="right">
+      <button class="clear" (click)="collapsed()"><i class="fas fa-bars"></i></button>
+        <a class="navbar-brand" href="#">
+          <img
+            src="assets/Care4JuanLogo.png"
+            alt="Logo"
+            class="d-inline-block align-text-center"
+            height="64px"
+            width="84px"
+          />
+          <span style="margin-left: 10px">Care4Juan</span>
+        </a>
+      </div>
+      <ul class="nav">
+        <li class="nav-item dropdown text-black">
+          <a
+            class="nav-link dropdown-toggle text-black"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="display: flex; align-items: center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-circle me-2"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+              />
+            </svg>
+  
+            <span>Profile</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Help</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div [ngClass]="isCollapsed ? 'side-bar collapsed' : 'side-bar'">
+    <div class="side-bar-content">
+      <ul class="side-nav">
+        <li
+          data-bs-toggle="collapse"
+          data-bs-target="#home-collapse"
+          aria-expanded="false"
+          routerLinkActive="active"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-folder-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"
+            />
+          </svg>
+          <span>Documents</span>
+
+          <div class="collapse mt-3" id="home-collapse" style="">
+            <ul class="btn-toggle-nav list-unstyled fw-normal small">
+              <li routerLink="./documents" routerLinkActive="activeClass">
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >All Documents</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Administration</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Administrative Staffs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Collecting Development...</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Services and Utilization</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Physical Set-up and Facilities</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Financial Support</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Linkages</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >ISO Documents</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-dark d-inline-flex text-white text-decoration-none rounded"
+                  >Other Documents</a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li routerLink="./request-document" routerLinkActive="active">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-file-earmark-arrow-up-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.354 9.854a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 8.707V12.5a.5.5 0 0 1-1 0V8.707L6.354 9.854z"
+            />
+          </svg>
+          <span>My Requests</span>
+        </li>
+        <li routerLink="./user-profile" routerLinkActive="active">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-square"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path
+              d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"
+            />
+          </svg>
+          <span>Manage User Profile</span>
+        </li>
+      </ul>
+      <div class="closer">
+        <button class="no-style">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="white"
+            [ngClass]="
+              isCollapsed
+                ? 'bi bi-chevron-double-left collapsed'
+                : 'bi bi-chevron-double-left'
+            "
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="dash-nav dash-nav-dark">
+>>>>>>> 85f621c3143e13d1c72d2ff70dff88d1f17fd11c
     <header>
-      <a href="#!" class="menu-toggle">
+      <a class="menu-toggle">
         <i class="fas fa-bars"></i>
       </a>
+<<<<<<< HEAD
       <img src="/assets/Care4JuanText.png" style="height: 4cm; width:4cm;" alt="">
     </header>
     <nav class="dash-nav-list">
@@ -11,12 +237,24 @@
         <i class="fas fa-home"></i> Home </a>
       <div class="dash-nav-dropdown">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle text-white">
+=======
+      <div class="main">
+        <span>Logo</span>
+      </div>
+    </header> 
+    <nav class="dash-nav-list">
+      <a routerLink="barangay-dashboard" routerLinkActive="router-link-active"  class="dash-nav-item">
+        <i class="fas fa-home"></i  > Home </a>
+      <div class="dash-nav-dropdown">
+        <a class="dash-nav-item dash-nav-dropdown-toggle">
+>>>>>>> 85f621c3143e13d1c72d2ff70dff88d1f17fd11c
           <i class="fas fa-building"></i> CSWDO </a>
         <div class="dash-nav-dropdown-menu">
           <a routerLink="soloparent" class="dash-nav-dropdown-item">Solo Parents</a>
         </div>
       </div>
       <div class="dash-nav-dropdown ">
+<<<<<<< HEAD
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle text-white">
           <i class="fas fa-building "></i> PDAO </a>
         <div class="dash-nav-dropdown-menu">
@@ -30,6 +268,16 @@
       </div>
       <div class="dash-nav-dropdown">
         <a href="#!" class="dash-nav-item dash-nav-dropdown-toggle text-white">
+=======
+        <a class="dash-nav-item dash-nav-dropdown-toggle">
+          <i class="fas fa-building"> </i>PDAO</a>
+        <li>
+          <a routerLink="pwd" routerLinkActive="router-link-active" class="dash-nav-dropdown-item">PWD</a>
+        </li>
+      </div>
+      <div class="dash-nav-dropdown">
+        <a class="dash-nav-item dash-nav-dropdown-toggle">
+>>>>>>> 85f621c3143e13d1c72d2ff70dff88d1f17fd11c
           <i class="fas fa-building"></i> OSCA </a>
         <div class="dash-nav-dropdown-menu">
           <a href="blank.html" class="dash-nav-dropdown-item">Blank</a>
@@ -59,6 +307,7 @@
         </div>
       </div>
     </nav>
+<<<<<<< HEAD
   </div>
   <div class="dash-app">
     <header class="dash-toolbar" style="background-color: #fa9960;;">
@@ -78,9 +327,10 @@
       </div>
     </header>
     <main class="dash-content">
+=======
+  </div> -->
+  <div [ngClass]="isCollapsed ? 'page-wrapper collapsed' : 'page-wrapper '">
+>>>>>>> 85f621c3143e13d1c72d2ff70dff88d1f17fd11c
       <router-outlet></router-outlet>
-    </main>
-
   </div>
 </div>
-

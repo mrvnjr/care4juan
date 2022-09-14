@@ -31,7 +31,7 @@
       display: flex;
     }
 .vh-100{
-  background-image: url(C:\Users\mrvnm.LAPTOP-TDRPNPJ3\care4juan\care4juan\src\assets\bg.jpg);
+  background-image: url("C:\Users\acer\care4juan\care4juan\src\assets\bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
