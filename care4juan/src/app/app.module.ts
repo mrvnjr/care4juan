@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 import { PdaoComponent } from './pdao/pdao.component';
 import { NgChartsModule } from 'ng2-charts';
 import { PwdComponent } from './pdao/pwd/pwd.component';
+import { CswdoComponent } from './cswdo/cswdo.component';
+import { SoloComponent } from './cswdo/solo/solo.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { PwdComponent } from './pdao/pwd/pwd.component';
     LoginComponent,
     SoloparentComponent,
     PdaoComponent,
-    PwdComponent
+    PwdComponent,
+    CswdoComponent,
+    SoloComponent
   ],
   imports: [
     BrowserModule,
