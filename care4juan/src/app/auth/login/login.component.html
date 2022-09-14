@@ -14,31 +14,34 @@
                 <div class="eason-card-title">Please sign in as</div>
                 <div class="easion-card-menu">
                   <div class="dropdown show">
-                    <select class="text-white form-select">
-                        <option selected >PDAO</option>
-                        <option value="1">OSCA</option>
-                        <option value="2">CSWDO</option>
-
-                    </select>
+                    <form class="form"  [formGroup]="loginForm">
+                        <select formControlName="loginID" class="text-white form-select" >
+                            <option selected value="1">PDAO</option>
+                            <option value="2">OSCA</option>
+                            <option value="3">CSWDO</option>
+                        </select>
+                    </form>
                     </div>
                   </div>
               </div>
+
               <div class="card-body">
-                  <form class="form" [formGroup]="loginForm">
+                  <form class="form" >
                       <div class="form-group">
-                          <input formControlName="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                          <input  type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
                       </div>
                       <div class="form-group">
-                          <input formControlName="password" type="password" class="form-control" placeholder="Password">
+                          <input type="password" class="form-control" placeholder="Password">
                       </div>
                       <div class="form-group">
+                        <h1>{{ selectedBranch }}</h1>
                           <div class="custom-control custom-checkbox">
                               <input type="checkbox" class="custom-control-input" id="customCheck1">
                               <label class="custom-control-label" for="customCheck1">Remember me</label>
                           </div>
                       </div>
                       <div class="account-dialog-actions">
-                          <button type="submit" class="btn btn-primary" (click)="login()">Sign in</button>
+                          <button type="submit" class="btn btn-primary" (click)="navigate()">Sign in</button>
                       </div>
                   </form>
               </div>

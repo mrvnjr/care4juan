@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from '../../services/login.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, NgModel } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,15 +13,16 @@ export class LoginComponent implements OnInit {
 
   private login$: Subscription = new Subscription();
   loginForm: FormGroup;
-
+  selectedBranch: any;
   constructor(
     private loginService: LoginService,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private router: Router
   ) {
     this.loginForm = this.formBuilder.group({
-      email: ['', Validators.required],
-      password: ['', Validators.required]
+      loginID: ['', Validators.required]
     });
+
   }
 
   ngOnInit(): void {
@@ -41,17 +43,18 @@ export class LoginComponent implements OnInit {
         }
       )
     )
-
-
-
-    // this.login$.add(
-    //   this.loginService.test().subscribe(
-    //     result=>{
-    //       console.log(result)
-    //     }
-    //   )
-    // )
+  }
+  navigate(){
+    console.log(this.loginForm.value.loginID);
+    if(this.loginForm.value.loginID === "1"){
+      this.router.navigate(['/home']);
+    }else if (this.loginForm.value.loginID === "2") {
+      this.router.navigate(['/home/pdao-pwd']);
+    } else {
+      this.router.navigate(['/home/cswdo-solo']);
+    }
 
   }
+
 
 }

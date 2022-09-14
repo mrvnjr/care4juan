@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './solo.component.html',
   styleUrls: ['./solo.component.css']
 })
-export class SoloComponent implements OnInit {
-
-  constructor() { }
-
+export class SolocswdoComponent implements OnInit {
   ngOnInit(): void {
+    throw new Error('Method not implemented.');
   }
+
 
 }

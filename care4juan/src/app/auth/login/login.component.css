@@ -1,39 +1,53 @@
+.main-section {
+  margin: 0 auto;
+  margin-top: 130px;
+  padding: 0;
+}
 
-    .bg-glass {
-      background-color: hsla(29, 85%, 51%, 0.9) !important;
-      backdrop-filter: saturate(200%) blur(25px) opacity(60%);
+.bg-glass {
+  background-color: #fa5c00cb;
+  padding: 0 18px;
+  border-radius: 10px;
+}
 
-    }
-    .btn-primary{
-      background-color: #FF5C00;
-    }
-    .card-header{
-      background-color: #FF5C00;
-    }
-    .img-fluid{
-      width: 15cm;
-      height: 15cm;
-      display: flex;
-      justify-content: center;
-    }
-    img{
-      width: 5cm;
-      height: 5cm;
-    }
-    .card-header{
-      display: flex;
-    }
-    select{
-      border-style: none;
-      background-color: #FF5C00;
-    }
-    .container{
-      display: flex;
-    }
-.vh-100{
-  background-image: url("C:\Users\acer\care4juan\care4juan\src\assets\bg.jpg");
+.btn-primary {
+  background-color: #FF5C00;
+}
+
+.card-header {
+  background-color: #FF5C00;
+}
+
+.img-fluid {
+  width: 20cm;
+  height: 20cm;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 5cm;
+  height: 5cm;
+}
+
+.card-header {
+  display: flex;
+}
+
+select {
+  border-style: none;
+  background-color: #FF5C00;
+}
+
+.container {
+  display: flex;
+}
+
+.vh-100 {
+  background-image: url("/assets/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
 }
+
