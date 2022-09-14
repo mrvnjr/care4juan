@@ -7,7 +7,33 @@
     .btn-primary{
       background-color: #FF5C00;
     }
+    .card-header{
+      background-color: #FF5C00;
+    }
+    .img-fluid{
+      width: 15cm;
+      height: 15cm;
+      display: flex;
+      justify-content: center;
+    }
     img{
       width: 5cm;
       height: 5cm;
     }
+    .card-header{
+      display: flex;
+    }
+    select{
+      border-style: none;
+      background-color: #FF5C00;
+    }
+    .container{
+      display: flex;
+    }
+.vh-100{
+  background-image: url(C:\Users\mrvnm.LAPTOP-TDRPNPJ3\care4juan\care4juan\src\assets\bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
