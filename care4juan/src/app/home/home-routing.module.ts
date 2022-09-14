@@ -3,6 +3,7 @@ import { SoloparentComponent } from './soloparent/soloparent.component';
 import { HomeComponent } from './home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PwdComponent } from '../pdao/pwd/pwd.component'; 
 
 const routes: Routes = [
   {
@@ -11,6 +12,7 @@ const routes: Routes = [
     children: [
       { path: 'soloparent', component: SoloparentComponent },
       { path: 'barangay-dashboard', component: BarangaydashComponent},
+      { path: 'pwd', component: PwdComponent},
       { path: '', redirectTo: 'barangay-dashboard', pathMatch: 'full' },
     ],
   },

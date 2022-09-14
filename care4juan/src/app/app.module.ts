@@ -8,21 +8,26 @@ import { SoloparentComponent } from './home/soloparent/soloparent.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { PdaoComponent } from './pdao/pdao.component';
+import { NgChartsModule } from 'ng2-charts';
+import { PwdComponent } from './pdao/pwd/pwd.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    BarangaydashComponent,
     SoloparentComponent,
+    PdaoComponent,
+    PwdComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
