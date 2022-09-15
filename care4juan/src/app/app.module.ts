@@ -12,6 +12,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { NgChartsModule } from 'ng2-charts';
 import { OscaFormComponent } from './home/osca-form/osca-form.component';
 import { ResidentsInfoComponent } from './home/residents-info/residents-info.component';
+import { OscaComponent } from './osca/osca.component';
+import { DashComponent } from './osca/dash/dash.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { ResidentsInfoComponent } from './home/residents-info/residents-info.com
     LoginComponent,
     OscaFormComponent,
     ResidentsInfoComponent,
+
+    DashComponent,
   ],
   imports: [
     FormsModule,
