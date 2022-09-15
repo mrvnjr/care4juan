@@ -6,7 +6,7 @@
 
 .bg-glass {
   background-color: #fa5c00cb;
-  padding: 0 18px;
+  padding: 25px 70px 25px;
   border-radius: 10px;
 }
 
@@ -16,22 +16,27 @@
 
 .card-header {
   background-color: #FF5C00;
+  
 }
 
 .img-fluid {
-  width: 20cm;
-  height: 20cm;
+  width: 15cm;
+  height: 15cm;
   display: flex;
-  justify-content: center;
 }
 
 img {
-  width: 5cm;
-  height: 5cm;
+  width: 6cm;
+  height: 6cm;
 }
-
+.card-body{
+  background: white;
+  border-radius: 10px;
+}
 .card-header {
   display: flex;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 select {
