@@ -10,13 +10,15 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './auth/login/login.component';
 
 import { NgChartsModule } from 'ng2-charts';
+import { MappingComponent } from './mapping/mapping.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    MappingComponent
   ],
   imports: [
     FormsModule,
