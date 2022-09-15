@@ -18,6 +18,13 @@ const routes: Routes = [
         (m) => m.OscaModule
       ),
     },
+    {
+      path: 'pdao-home',
+      loadChildren: () =>
+        import('./pdao-home/pdao-home.module').then(
+          (m) => m.PdaoHomeModule
+        ),
+      },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];
 
