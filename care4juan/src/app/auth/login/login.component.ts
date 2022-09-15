@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
     }else if (this.loginForm.value.loginID === "2") {
       this.router.navigate(['/osca']);
     } else {
-      this.router.navigate(['/home/cswdo-solo']);
+      this.router.navigate(['/home/barangaydash']);
     }
 
   }

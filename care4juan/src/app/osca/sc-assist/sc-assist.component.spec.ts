@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashComponent } from './dash.component';
+import { ScAssistComponent } from './sc-assist.component';
 
-describe('DashComponent', () => {
-  let component: DashComponent;
-  let fixture: ComponentFixture<DashComponent>;
+describe('ScAssistComponent', () => {
+  let component: ScAssistComponent;
+  let fixture: ComponentFixture<ScAssistComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashComponent ]
+      declarations: [ ScAssistComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DashComponent);
+    fixture = TestBed.createComponent(ScAssistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
