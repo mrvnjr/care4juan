@@ -10,13 +10,16 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './auth/login/login.component';
 
 import { NgChartsModule } from 'ng2-charts';
-
+import { OscaFormComponent } from './home/osca-form/osca-form.component';
+import { ResidentsInfoComponent } from './home/residents-info/residents-info.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    OscaFormComponent,
+    ResidentsInfoComponent,
   ],
   imports: [
     FormsModule,
