@@ -14,6 +14,8 @@ import { OscaFormComponent } from './home/osca-form/osca-form.component';
 import { ResidentsInfoComponent } from './home/residents-info/residents-info.component';
 import { OscaComponent } from './osca/osca.component';
 import { DashComponent } from './osca/dash/dash.component';
+import { CswdoComponent } from './cswdo/cswdo.component';
+import { DashboardComponent } from './cswdo/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { DashComponent } from './osca/dash/dash.component';
     ResidentsInfoComponent,
 
     DashComponent,
+      CswdoComponent,
+      DashboardComponent,
   ],
   imports: [
     FormsModule,
