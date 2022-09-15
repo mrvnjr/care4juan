@@ -18,6 +18,13 @@ const routes: Routes = [
         (m) => m.OscaModule
       ),
     },
+    {
+      path: 'cswdo',
+      loadChildren: () =>
+        import('./cswdo/cswdo.module').then(
+          (m) => m.CswdoModule
+        ),
+      },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];
 
