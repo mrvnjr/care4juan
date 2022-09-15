@@ -6,12 +6,16 @@ import { HomeComponent } from './home.component';
 import { BarangayComponent } from './charts/barangay/barangay.component';
 import { BarangaydashComponent } from './barangaydash/barangaydash.component';
 import { NgChartsModule } from 'ng2-charts';
+import { PdaoComponent } from './pdao/pdao.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     BarangayComponent,
-    BarangaydashComponent
+    BarangaydashComponent,
+    PdaoComponent,
+    ReportsComponent
   ],
   imports: [
     CommonModule,
