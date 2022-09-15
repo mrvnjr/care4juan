@@ -11,7 +11,13 @@ const routes: Routes = [
     import('./home/home.module').then(
       (m) => m.HomeModule
     ),
-  },
+  },{
+    path: 'osca',
+    loadChildren: () =>
+      import('./osca/osca.module').then(
+        (m) => m.OscaModule
+      ),
+    },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
 ];
 
