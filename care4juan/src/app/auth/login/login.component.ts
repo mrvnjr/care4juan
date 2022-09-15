@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
   navigate(){
     console.log(this.loginForm.value.loginID);
     if(this.loginForm.value.loginID === "1"){
-      this.router.navigate(['/home']);
+      this.router.navigate(['/pdao-home']);
     }else if (this.loginForm.value.loginID === "2") {
       this.router.navigate(['/osca']);
     } else {
